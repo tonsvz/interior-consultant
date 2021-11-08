@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #181719;
+  --font-color: #ffffff;
+  --test-color: gray;
+}
+
+.nav-content {
+  padding: 46px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  flex-wrap: wrap;
+}
+
+.menu {
+  display: flex;
+  width: 900px;
+  justify-content: space-between;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+li {
+  color: #ffffff;
+  font-family: "Montserrat", monospace;
+  font-weight: 500;
+}
+
+li:nth-child(1) {
+  font-weight: 700;
+  border-bottom: 2px solid white;
+}
+
+body {
+  background-color: #181719;
+}
+
+button {
+  padding: 8px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  border-radius: 2%;
+  text-transform: uppercase;
+  font-family: "Crimson Pro", monospace;
+  font-weight: 500;
+  background-color: #181719;
+}
