@@ -8,12 +8,15 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <nav class="nav-content">
-        <div class="flex-container">
-          <button class="btn">this interior</button>
-          <div class="navigation">
-            <ul class="menu">
+    <div class="container">
+      <header class="main-header">
+        <div class="nav-container">
+          <div class="btn">
+            <button>This Interior</button>
+          </div>
+
+          <div class="menu">
+            <ul class="links">
               <li>Home</li>
               <li>Collection</li>
               <li>About</li>
@@ -21,23 +24,42 @@
             </ul>
           </div>
         </div>
-      </nav>
-    </header>
+      </header>
 
-    <main class="container">
-      <div class="front-text">
-        <h1>Modern interior</h1>
+      <main class="main-container">
+        <div class="front-text">
+          <h1 class="title">Modern Interior</h1>
+          <p class="info-text">
+            A full-Service residential & commercial interior design and staging
+            company offering professional organizing & eco-services.
+          </p>
+          <a href="" class="read-more">Read More &rarr;</a>
+        </div>
+
+        <div class="front-image">
+          <img src="/assets/photo1.png" class="front-photo" alt="front-photo" />
+
+          <article class="card-container">
+            <div class="card-photo">
+              <img src="/assets/photo2.png" alt="" />
+              <div class="desc">
+                <h2>Aliza Webber</h2>
+                <p>Interior Designer</p>
+              </div>
+            </div>
+
+            <div class="card-summary">
+              <h1>Designed in 2020 by Aliza Webber</h1>
+            </div>
+          </article>
+        </div>
+      </main>
+      <div class="footer">
         <p>
-          A full-Service residential & commercial interior design and staging
-          company offering professional organizing & eco-services.
+          Created by <a href="www.instagram.com/tonsofcode">tonsofcode</a> -
+          devChallenges.io
         </p>
-        <p>Read more</p>
       </div>
-
-      <div class="front-image">
-        <img src="" alt="" />
-        <article></article>
-      </div>
-    </main>
+    </div>
   </body>
 </html>
