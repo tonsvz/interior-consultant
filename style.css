@@ -61,6 +61,52 @@ button {
   text-transform: uppercase;
 }
 
+.burger {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+input {
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 5;
+  display: none;
+}
+
+.cross {
+  position: absolute;
+  top: 10px;
+  background-color: white;
+  border-radius: 30%;
+  z-index: -2;
+  width: 25px;
+  height: 3px;
+  cursor: pointer;
+  right: 10px;
+  opacity: 0;
+}
+
+.cross::after,
+.cross::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.cross::after {
+  top: 10px;
+}
+
+.cross::before {
+  top: -10px;
+}
+
 .menu {
   display: flex;
   width: 50%;
@@ -277,5 +323,29 @@ li:nth-child(1):hover {
 
   .front-photo {
     padding: 20px;
+  }
+
+  .cross {
+    opacity: 1;
+    left: 0;
+  }
+  input {
+    width: 30px;
+    height: 30px;
+    display: unset;
+  }
+}
+
+/* Ipad */
+
+@media (max-width: 810px) {
+  .cross {
+    opacity: 1;
+    left: 0;
+  }
+  input {
+    width: 30px;
+    height: 30px;
+    display: unset;
   }
 }
