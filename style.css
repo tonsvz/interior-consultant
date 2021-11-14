@@ -231,6 +231,7 @@ li:nth-child(1):hover {
 
 .front-image {
   position: relative;
+  width: 300pxhei;
 }
 
 .front-image img {
@@ -273,6 +274,9 @@ li:nth-child(1):hover {
 
 .desc p {
   color: #828282;
+}
+.hide-img {
+  display: none;
 }
 
 .card-summary {
@@ -412,5 +416,15 @@ li:nth-child(1):hover {
     width: 30px;
     height: 30px;
     display: unset;
+  }
+
+  .front-image .front-photo {
+    width: 810px !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .front-image .front-photo {
+    width: 900px;
   }
 }
