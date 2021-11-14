@@ -1,5 +1,10 @@
 let burgerMenu = document.querySelector(".check");
+let selector = document.querySelector(".newMenu");
 
 burgerMenu.addEventListener("click", () => {
-  console.log("Check working!");
+  selector.classList.toggle("hide");
+});
+
+interior.addEventListener("click", () => {
+  location.reload();
 });
